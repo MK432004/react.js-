@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-     let [counter ,setCounter]= useState(15)
+     let [counter ,setCounter]= useState(0)
  //let  counter = 15 
 const advalue = () =>{
  //console.log("clicked", counter)
@@ -19,7 +19,7 @@ const removevalue = ()=>{
 
   return (
     <>
-    <h1>hllow react </h1>
+    <h1>Counter App </h1>
     <h2>counter value : {counter} </h2>
     <button 
     onClick={advalue}>Add value {counter}</button>
