@@ -10,13 +10,16 @@ import Card from './Componentes/Card';
 function App() {
  const[counter,setCounter] = useState(0)
 
+
+ 
+
   return (
     <>
     <h className='bg-green-400 rounded text-2xl text-black' >Tailwind test </h>
-    <Card/> <Card/>
+    <Card username=" Manish Kumar" btnText="clickme" /> <Card username="Manish Kumar" btnText="clickme"/>
 
     </>
   )
-}
 
+}
 export default App
