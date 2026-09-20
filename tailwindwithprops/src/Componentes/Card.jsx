@@ -33,7 +33,7 @@ function Card ({username , btnText}){
         </div>
         <div className="flex  justify-between font-mono">
           <p>{btnText}</p>
-          <p>0.01</p>
+          <p>{btnText}</p>
         </div>
       </div>
     </div>
