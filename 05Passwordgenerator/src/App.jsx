@@ -61,9 +61,7 @@ function App() {
            type="checkbos"
            defaultChecked= {numberAllowed}
            id = "numberInput"
-           onChange={()=> {setNumberalowed((prev)  => !prev);
-
-           }}
+           onChange={()=> {setNumberalowed((prev)  => !prev); }}
           />
           <label>Length:{length}</label>
         </div>
