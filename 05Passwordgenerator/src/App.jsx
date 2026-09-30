@@ -65,6 +65,14 @@ function App() {
           />
           <label>Length:{length}</label>
         </div>
+         <div className="flex items-center gap-x-1"> 
+          <input
+           type="checkbos"
+           defaultChecked= {numberAllowed}
+           id = "numberInput"
+           onChange={()=> {setNumberalowed((prev)  => !prev); }}
+          />
+          <label>Length:{length}</label>
         </div>
         
           
