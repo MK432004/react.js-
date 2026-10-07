@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Section1 from './components/section1/Section1';
+import Section2 from './components/section2/Section2';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
     <Section1/>
-    <h1 className="bg-yellow-800 border-xl">may name is manish kumar </h1>
+    <Section2/>
+    
     </>
   )
 }
