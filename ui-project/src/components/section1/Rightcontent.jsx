@@ -3,7 +3,7 @@ import 'remixicon/fonts/remixicon.css'
 import Rightcard from './Rightcard';
 const Rightcontent = () => {
   return (
-  <div className="h-full gap-4 w-3/4 py-4 px-4 flex bg-amber-300">
+  <div className="h-full gap-4 w-3/4 p-4 flex bg-amber-300">
       <Rightcard/>
       <Rightcard/>
       <Rightcard/>
