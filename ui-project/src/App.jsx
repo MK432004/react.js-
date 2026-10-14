@@ -7,11 +7,28 @@ import Section1 from './components/section1/Section1';
 import Section2 from './components/section2/Section2';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const users = 
+   [
+    {
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzyFEYqkfqQndmgOzZOOARlzz0aG-awZi9pckun0Qeg&s=10",
+      introduction:"",
+      tag:"diserv"
+    },
+    {
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIAC1kBFD8UgsOayMBHWl9pktJkSO1BuY7ZpdVGmLUMg&s=10",
+      introduction:"",
+      tag:" stisfied"
+    },
+    {
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh0xz2IFyqw2rS-vba9NyWd1sBovXfN-pwo7gmZtpQA&s=10",
+     introduction:"",
+     tg:" unerbag"
+    }
+  ]
 
   return (
     <>
-    <Section1/>
+    <Section1 users ={users}/>
     <Section2/>
     
     </>
