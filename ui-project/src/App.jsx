@@ -10,7 +10,7 @@ function App() {
   const users = 
    [
     {
-      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzyFEYqkfqQndmgOzZOOARlzz0aG-awZi9pckun0Qeg&s=10",
+      image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMb26HBU9J3LOKzN8BywaTqJeRtaTVgKKOq4FaMaH8zw&s=10",
       introduction:"",
       tag:"diserv"
     },
@@ -22,7 +22,7 @@ function App() {
     {
       image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh0xz2IFyqw2rS-vba9NyWd1sBovXfN-pwo7gmZtpQA&s=10",
      introduction:"",
-     tg:" unerbag"
+     tga:" unerbag "
     }
   ]
 
