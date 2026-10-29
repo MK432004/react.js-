@@ -4,9 +4,20 @@ import { useState } from 'react';
 const App = () => {
   const   [notes ,setNotes] = useState(" ")
   const [details , setDetails] = useState(" ")
+
+  const [task , setTask] = useState( [ ])
+
 const submithandler = (e) =>{
  e.preventDefault() 
-  console.log(notes , details)
+  
+ const copytask = [...task]
+ copytask.push(notes,details)
+ setTask(copytask)
+ console.log() 
+
+
+  setNotes(" ")
+  setDetails(" ")
 }
 
 
@@ -37,10 +48,9 @@ const submithandler = (e) =>{
         <div className="p-10 gap-2 flex flex-wrap bg-blue-950 lg:w-1/2 ">
         <h1 className="text-3xl">yor notes </h1>
         < div className="flex overflow-auto h-full gap-5 ">
-        <div className=" h-40 w-32 rounded  bg-white"> </div>
-        <div className=" h-40 w-32 rounded  bg-white"> </div>
-        <div className=" h-40 w-32 rounded  bg-white"> </div>
-        <div className=" h-40 w-32 rounded  bg-white"> </div>
+         {task.map(function() {
+          return <div className=" bg-white h-42 w-52 rounded-2xl "></div>
+         } )}
         </div> 
       </div>
     </div>
