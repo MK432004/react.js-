@@ -5,15 +5,20 @@ const App = () => {
   const   [notes ,setNotes] = useState(" ")
   const [details , setDetails] = useState(" ")
 
-  const [task , setTask] = useState( [ ])
+  const [task , setTask] = useState([])
 
 const submithandler = (e) =>{
  e.preventDefault() 
   
  const copytask = [...task]
- copytask.push(notes,details)
+ copytask.push({
+  notes: notes,
+  details: details
+})
+ 
+ 
  setTask(copytask)
- console.log() 
+
 
 
   setNotes(" ")
@@ -48,8 +53,11 @@ const submithandler = (e) =>{
         <div className="p-10 gap-2 flex flex-wrap bg-blue-950 lg:w-1/2 ">
         <h1 className="text-3xl">yor notes </h1>
         < div className="flex overflow-auto h-full gap-5 ">
-         {task.map(function() {
-          return <div className=" bg-white h-42 w-52 rounded-2xl "></div>
+         {task.map(function(elem, idx) {
+          return <div  key={idx} className=" bg-white p-5 text-black  h-42 w-52 rounded-2xl ">
+            <h3 className="leading-tight text-xl font-bold text-black" >{elem.notes}</h3>
+            <p className=" lesding-tight font-medium ">{elem.details}</p>
+          </div>
          } )}
         </div> 
       </div>
