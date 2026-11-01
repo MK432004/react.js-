@@ -15,6 +15,7 @@ const user = {
 
 localStorage.setItem("user", JSON.stringify(user))
 
+
   return (
     <>
      <div>app</div>
