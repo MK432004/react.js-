@@ -8,6 +8,7 @@ const Navbar = () => {
         <a  className=" text-lg font-bold " href="/">Home</a>
         <a className=" text-lg font-bold " href="/about">About</a>
         <a className=" text-lg font-bold " href="/contact">Contact</a>
+        <a href="/corsee" className="text-lg font-bold ">Corsee</a>
         <a className="text-lg font-bold " href="/product">Product</a>
         <a className="text-lg font-bold " href="*">Notefound</a>
       </div>
