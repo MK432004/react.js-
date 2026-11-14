@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+
+import Buton from "./Components/Buton";
 import Navb from "./Components/Navb"
 const App = () => {
 
-  const [them , setThem] = useState("them")
 
   return (
     <div className="">
-     <Navb them={them} />
-      
+     <Navb className="{them} bg-blue-600 "/>
+     <Buton/>
     </div>
   )
 }

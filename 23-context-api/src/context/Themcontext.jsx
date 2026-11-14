@@ -1,14 +1,18 @@
-import React, { createContext } from 'react'
+import { createContext, useState } from "react";
 
 
-   export const Postdata = createContext(Postdata)
+   export const Themdatacontext =createContext()
+   
 const Themcontext = (props) => {
+   const [them, setThem] = useState("light")
 
   return (
     <div>
-      <Postdata.provider value="Manish">
-        {props.children}
-      </Postdata.provider>
+      <Themdatacontext.Provider value={[them,setThem]}>
+      {props.children}
+      </Themdatacontext.Provider>
+         
+
     </div>
   )
 }
