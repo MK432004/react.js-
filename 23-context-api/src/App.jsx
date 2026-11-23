@@ -6,7 +6,7 @@ const App = () => {
 
   return (
     <div className="">
-     <Navb className="{them} bg-blue-600 "/>
+     <Navb />
      <Buton/>
     </div>
   )
